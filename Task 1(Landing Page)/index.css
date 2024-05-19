@@ -1,0 +1,139 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 40px 0;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.section:nth-of-type(even) {
+    background: #e0e0e0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: right;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #ff6347;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        text-align: center;
+    }
+
+    .column {
+        max-width: 100%;
+    }
+}
